@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css" />
+    <html />
+  </head>
+
+  <body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="scrollToSection('title')">Home</a></li>
+                <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+                <li><a href="#" onclick="scrollToSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Background Images -->
+        <img src="public/images/Red_square.png" alt="Red Square" id="red-square">
+    <!-- title -->
+    <div class="title">
+        <div id="title-text">
+            <h1>Hi, I'm Sookie</span></h1>
+        </div>
+
+        <div id="description-text">
+            <h2>I'm <span class="typed-text"></span></h2>
+        </div>
+
+        
+        <img src="public/images/Green_circle.png" alt="Green Circle" id="green-circle">
+       
+
+        <div class="scroll-down">
+            <p><a href="#about">Scroll Down to meet me!</a></a></p>
+            <a href="#about" id="scroll-down-button"><img src="public/images/Scroll_Down.svg" alt="Scroll Down"></a>
+        </div>
+    </div>
+
+    
+    <div class="main-content">
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div id="about-block">
+                    <div id="about-text-block">
+                        <h1 class="sub-title">About Me</h1>
+                            <p class="about-text"> Hi, I'm Sookie! I'm a student at the University of California, Riverside, where I'm pursuing a degree in Computer Science. 
+                                I'm passionate about using technology to make a positive impact on the world. I love to learn new things and challenge myself. 
+                                I'm a quick learner and I'm always looking for new ways to improve my skills. Below you can explore some of the recent projects I've worked on!
+                        </p>
+                    </div>
+                    <div id="profile-picture">
+                        <img class="shadow-image" src="public/images/pic_shadow.png" alt="Picture drop shadow">
+                        <img class="headshot" src="public\images\profile_pic.png" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="public\images\curved_line.png" id="squiggle">
+        <!-- projects -->
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div id="project-list">
+                    <p> More projects coming soon!</p>
+                </div>
+            </div>
+        </div>
+        <img src="public\images\Construction-Sign-Transparent.png" id="underConstruction">
+
+
+        <!-- contact -->
+        <footer id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="row">
+                    <div class="contact-left">
+                        <p>Email: <a href="mailto:sookiedrabla1@gmail.com">sookiedrabla1@gmail.com</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/sookiedrabla/">https://www.linkedin.com/in/sookiedrabla/</a></p>
+                    </div>
+                    <div class="contact-right"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".typed-text", {
+            strings: ["a Student", "a Developer", "a Designer", "a Creator", "a Foodie", "a Traveler", "an Anime Fan"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script src="src/script.js"></script>
+</body>
+</html>
