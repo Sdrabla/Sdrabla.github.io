@@ -1,0 +1,112 @@
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+    max-height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+.enlarge-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+}
+
+.project-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Lightbox Modal */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 10000001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+    cursor: pointer;
+}
+
+.lightbox-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    animation: zoomIn 0.3s ease;
+    pointer-events: none;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* For single column on smaller screens */
+@media (max-width: 768px) {
+    .project-images {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+}
+
+/* For larger screens, show 2-3 columns */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1025px) {
+    .project-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
