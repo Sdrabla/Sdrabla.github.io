@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
     <html />
   </head>
 
@@ -49,30 +53,52 @@
                 <div id="about-block">
                     <div id="about-text-block">
                         <h1 class="sub-title">About Me</h1>
-                            <p class="about-text"> Hi, I'm Sookie! I'm a student at the University of California, Riverside, where I'm pursuing a degree in Computer Science. 
-                                I'm passionate about using technology to make a positive impact on the world. I love to learn new things and challenge myself. 
-                                I'm a quick learner and I'm always looking for new ways to improve my skills. Below you can explore some of the recent projects I've worked on!
+                            <p class="about-text">I'm a Computer Science student at the University of California, Riverside, with a passion for design-driven technology. 
+                                As the Social Media and Marketing Chair for the Women in Computing organization at UCR, I love combining creativity, user-centered thinking, 
+                                and code to craft engaging digital experiences. I'm especially drawn to UI/UX design and web development where thoughtful design meets functionality. 
+                                Whether it's designing clean interfaces or building responsive websites, I enjoy creating tools that are both useful and beautiful.
+                                <br><br>Take a look below to see some of the projects I've worked on!
                         </p>
                     </div>
                     <div id="profile-picture">
                         <img class="shadow-image" src="public/images/pic_shadow.png" alt="Picture drop shadow">
-                        <img class="headshot" src="public\images\Profile_Pic.png" alt="Profile Picture">
+                        <img class="headshot" src="public\images\profile_pic.png" alt="Profile Picture">
                     </div>
                 </div>
             </div>
         </div>
 
         <img src="public\images\curved_line.png" id="squiggle">
+        
+        
         <!-- projects -->
         <div id="projects">
-            <div class="container">
+         <div class="container">
+            <section class="carousel-section">
                 <h1 class="sub-title">My Projects</h1>
-                <div id="project-list">
-                    <p> More projects coming soon!</p>
-                </div>
-            </div>
+                    <div class="project-carousel">
+                        <a href="lyf180.html">
+                            <img class="project-card" src="public\images\Project-Card\Lyf180.png" alt="Lyf180">
+                            <div class="project-info">
+                                <h3>Lyf180</h3>
+                            </div>
+                        </a>
+
+                        <a href="ranked.html">
+                            <img class="project-card" src="public\images\Project-Card\Ranked.png" alt="Ranked">
+                            <div class="project-info">
+                                <h3>Ranked</h3>
+                            </div>
+                        </a>
+
+                        <a>
+                            <img class="project-card" src="public\images\Project-Card\Coming-Soon.png" alt="Lyf180">
+                            <div class="project-info">
+                                <h3>Coming Soon</h3>
+                            </div>
+                        </a>
+            </section>
         </div>
-        <img src="public\images\Construction-Sign-Transparent.png" id="underConstruction">
 
 
         <!-- contact -->
@@ -99,5 +125,6 @@
         })
     </script>
     <script src="src/script.js"></script>
+    <script src="/path/to/flickity.pkgd.min.js"></script>
 </body>
 </html>
