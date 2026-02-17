@@ -124,34 +124,28 @@ html {
     position: relative;
     font-family: "Inknut Antiqua";
     font-size: 15px;
-    padding-right: 30%;
     padding-top: 20px; 
   }
   #about-block{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
   }
   
   #profile-picture{
     position: relative;
-    right: 0;
-    bottom: 0;
-    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .shadow-image{
-    position: absolute;
-    left: 100px;
-    bottom: 0;
-    top: 10px;
-    width: 50%;
-    z-index: 1000000;
-  }
-  
+
   .headshot{
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
   
   /* projects */
