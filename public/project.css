@@ -93,4 +93,18 @@ html {
     max-width: 900px;
   }
 
+  .main-content > h1 {
+    text-align: center;
+  }
+
+  .project-follow-link {
+    text-align: center;
+    margin: 0.75rem 0 0;
+    max-width: 900px;
+  }
+
+  .project-follow-link a {
+    color: #3e4c7d;
+  }
+
   
